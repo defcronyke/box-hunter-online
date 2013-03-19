@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+ Ⓒ Copyright 2013 Jeremy Carter
+
+ This file is part of Box Hunter Online.
+
+ Box Hunter Online is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Box Hunter Online is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Box Hunter Online.  If not, see <http://www.gnu.org/licenses/>.
+
+ index.html
+
+  Created on: 2013-03-19
+      Author: Jeremy Carter
+     Contact: Jeremy [at] JeremyCarter [dot] ca
+-->
+
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	
+	<title>Box Hunter Online v0.0.1 | Try to get the black box without breaking it.</title>
+	<meta name="Description" content="A simple and fun platform-style game featuring Box2D physics. Originally written in C++, this version has been ported to WebGL so you can play online!">
+	<link type="text/css" rel="stylesheet" href="style/index.css">
+	
+	<script src="src/3rd-party/gl-matrix-min.js"></script>
+	<script src="src/3rd-party/webgl-utils.js"></script>
+	<script src="src/3rd-party/Box2dWeb-2.1.a.3.min.js"></script>
+	<script id="vertex-shader" type="x-shader/x-vertex" src="shaders/default_vertex.glsl"></script>
+	<script id="fragment-shader" type="x-shader/x-fragment" src="shaders/default_fragment.glsl"></script>
+	<script src="src/GameObject.js"></script>
+	<script src="src/Square.js"></script>
+	<script src="src/Triangle.js"></script>
+	<script src="src/Goal.js"></script>
+	<script src="src/SquarePlayer.js"></script>
+	<script src="src/WebGL.js"></script>
+	<script src="src/Physics2D.js"></script>
+	<script src="src/levels/Level001.js"></script>
+	<script src="src/levels/Level002.js"></script>
+	<script src="src/levels/Level003.js"></script>
+	<script src="src/levels/Level004.js"></script>
+	<script src="src/levels/Level005.js"></script>
+	<script src="src/levels/Level006.js"></script>
+	<script src="src/levels/Level007.js"></script>
+	<script src="src/levels/Level008.js"></script>
+	<script src="src/levels/Level009.js"></script>
+	<script src="src/levels/Level010.js"></script>
+	<script src="src/levels/Level011.js"></script>
+	<script src="src/levels/Level012.js"></script>
+	<script src="src/levels/Level013.js"></script>
+	<script src="src/main.js"></script>
+</head>
+
+<body onload="start_game();">
+	<div id="page">
+		<header>
+			<h1>Box Hunter Online v0.0.1</h1>
+		</header>
+	
+		<canvas id="box-hunter-canvas" width="800" height="600">
+			Your browser doesn't appear to support the HTML5 canvas element.<br>
+			Get a <a href="http://mozilla.org/firefox">better browser</a> to play.
+		</canvas>
+	
+		<div id="controls">
+			<h2>Controls</h2>
+			<b>Left and Right:</b> Left and Right Arrows<br>
+			<b>Jump:</b> Left Ctrl<br>
+			<b>Restart Current Level:</b> F1<br>
+		</div>
+	
+		<footer>
+			<h4>Copyright &copy; 2013 <a href="http://JeremyCarter.ca">Jeremy Carter</a>, licensed under the <a href="http://www.gnu.org/licenses/gpl.txt">GPL</a>.<br>
+				Contact: Jeremy [at] JeremyCarter [dot] ca</h4>	
+		</footer>
+	</div>
+</body>
+
+</html>
