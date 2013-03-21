@@ -161,7 +161,7 @@ Physics2D.prototype.handle_events = function(event)	// this is triggered on ever
 		this.an_event = this.EVENTS.MOVE_RIGHT;
 	else if (String.fromCharCode(event.keyCode) == "%")
 		this.an_event = this.EVENTS.MOVE_LEFT;
-	else if (event.keyCode == 17)
+	else if (event.keyCode == 16)
 		this.an_event = this.EVENTS.JUMP;
 	else if (event.keyCode == 112)
 		this.an_event = this.EVENTS.RELOAD;
