@@ -157,6 +157,9 @@ Physics2D.prototype.handle_events = function(event)	// this is triggered on ever
 	var cheat_next_level = "plus";
 	var cheat_previous_level = "minus";
 	
+	console.log(event.keyCode);
+	console.log(String.fromCharCode(event.keyCode));
+	
 	if (String.fromCharCode(event.keyCode) == "'")
 		this.an_event = this.EVENTS.MOVE_RIGHT;
 	else if (String.fromCharCode(event.keyCode) == "%")
