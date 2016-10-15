@@ -152,21 +152,21 @@ Physics2D = function(Physics2DConfig)
  
 Physics2D.prototype.handle_events = function(event)	// this is triggered on every key press
 {
-	this.an_event = this.EVENTS.NOTHING;
 	
+//	console.log(event.keyCode);
+//	console.log(String.fromCharCode(event.keyCode));
+	
+	this.an_event = this.EVENTS.NOTHING;
 	var cheat_next_level = "plus";
 	var cheat_previous_level = "minus";
-	
-	console.log(event.keyCode);
-	console.log(String.fromCharCode(event.keyCode));
 	
 	if (String.fromCharCode(event.keyCode) == "'")
 		this.an_event = this.EVENTS.MOVE_RIGHT;
 	else if (String.fromCharCode(event.keyCode) == "%")
 		this.an_event = this.EVENTS.MOVE_LEFT;
-	else if (event.keyCode == 16)
+	else if (event.keyCode == 17)
 		this.an_event = this.EVENTS.JUMP;
-	else if (event.keyCode == 112)
+	else if (String.fromCharCode(event.keyCode) == "R")
 		this.an_event = this.EVENTS.RELOAD;
 		
 	// cheat: skip to the next level
